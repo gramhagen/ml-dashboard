@@ -1,0 +1,23 @@
+[flask]
+SECRET_KEY =
+
+[common]
+# %'s need to be escaped to %% for flask-iniconfig
+LOG_FMT = [%%(asctime)-15s %%(levelname)s %%(filename)s:%%(lineno)s - %%(funcName)s()] %%(message)s
+LOG_LEVEL = DEBUG
+
+DEBUG = False
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+TESTING = False
+
+[dev]
+SQLALCHEMY_DATABASE_URI = sqlite://
+
+[prod]
+LOG_PATH = /var/log/app/flask.log
+LOG_LEVEL = ERROR
+SQLALCHEMY_DATABASE_URI = sqlite://
+
+[test]
+SQLALCHEMY_DATABASE_URI = sqlite://
+TESTING = True

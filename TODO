@@ -1,0 +1,9 @@
+shore up sample page, replace mdl template code, use templating
+clean up docs (change template)
+improve configuration
+mention flask explore in docs (code setup)
+change test route to /, and generate chart from pandas - plotly
+pull in font-awesome?
+learn about css setup
+remove .cache files in all folders as part of clean op
+https://exploreflask.com/templates.html

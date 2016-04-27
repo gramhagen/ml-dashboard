@@ -1,0 +1,21 @@
+{
+  "name": "obeya",
+  "description": "obeya",
+  "authors": "Gramhagen",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gramhagen/obeya.git"
+  },
+  "homepage": "https://github.com/gramhagen/obeya/",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/gramhagen/obeya/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-uglify": "^1.5.3"
+  }
+}
