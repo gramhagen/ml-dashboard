@@ -1,16 +1,16 @@
 {
-  "name": "obeya",
-  "description": "obeya",
+  "name": "ml-dashboard",
+  "description": "ml-dashboard",
   "authors": "Gramhagen",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gramhagen/obeya.git"
+    "url": "git+https://github.com/gramhagen/ml-dashboard.git"
   },
-  "homepage": "https://github.com/gramhagen/obeya/",
+  "homepage": "https://github.com/gramhagen/ml-dashboard/",
   "version": "0.1.0",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/gramhagen/obeya/issues"
+    "url": "https://github.com/gramhagen/ml-dashboard/issues"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

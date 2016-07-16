@@ -1,12 +1,12 @@
-Obeya
+ML-Dashboard
 =====
 
-Obeya (Japanese for War Room) is a Flask application that provides scalable and beautiful plotting and interaction.
+ML-Dashboard is a Flask application that provides scalable and beautiful plotting and interaction.
 
 Tech Stack
 ----------
 
-Obeya is built on the following technologies:
+ML-Dashboard is built on the following technologies:
 
 Back end
 ````````
@@ -44,8 +44,8 @@ Installation
 .. code-block:: bash
 
     # git the repo
-    git clone https://github.com/gramhagen/obeya
-    cd obeya
+    git clone https://github.com/gramhagen/ml-dashboard
+    cd ml-dashboard
 
 2. Install the applicaiton
 
@@ -54,22 +54,22 @@ Installation
     .. code-block:: bash
 
         # build the container
-        docker build -t obeya deploy
+        docker build -t ml-dashboard deploy
 
         # run the container ENV can be [<dev>, test, prod], expose ports 80 and 9001
-        docker run -e "ENV=prod" -p 80:80 -p 9001:9001 -it obeya
+        docker run -e "ENV=prod" -p 80:80 -p 9001:9001 -it ml-dashboard
 
     b. Local Installation (the following directories must be installed, or config files should be modified)
 
             - /usr/local/virtualenvs : to house python virtual environments
-            - /usr/local/obeya : where the source code is
-            - /var/run/obeya : where the uwsgi pid and socket files go
-            - /var/log/obeya : where all logs are written
+            - /usr/local/ml-dashboard : where the source code is
+            - /var/run/ml-dashboard : where the uwsgi pid and socket files go
+            - /var/log/ml-dashboard : where all logs are written
 
     .. code-block:: bash
 
-        # create obeya virtualenv
-        mkvirtualenv /usr/local/virtualenvs/obeya
+        # create ml-dashboard virtualenv
+        mkvirtualenv /usr/local/virtualenvs/ml-dashboard
         pip install --upgrade pip
         pip install -r requirements.txt
         python manage.py init
@@ -110,7 +110,7 @@ Run the application locally with uwsgi
 .. code-block:: bash
 
     # from root dir, using appropriate venv, ENV can bd [<dev>, test, prod]
-    # you may need to create pid and log folders with correct permissions (/var/run/uwsgi, /var/log/obeya)
+    # you may need to create pid and log folders with correct permissions (/var/run/uwsgi, /var/log/ml-dashboard)
     uwsgi --ini config/uwsgi.ini --http-socket 0.0.0.0:80 --env ENV='dev'
 
 Application Management

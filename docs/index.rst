@@ -1,9 +1,9 @@
-.. Obeya documentation master file, created by
+.. ML-Dashboard documentation master file, created by
    sphinx-quickstart on Sat Mar  5 18:55:22 2016.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Obeya's documentation!
+Welcome to ML-Dashboard's documentation!
 =================================
 
 Contents:
